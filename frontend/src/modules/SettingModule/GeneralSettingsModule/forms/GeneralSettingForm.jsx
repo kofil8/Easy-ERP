@@ -1,6 +1,5 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { Input, Form, Select, Switch } from 'antd';
-import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
+import { Form, Input, Select } from 'antd';
+import { useDispatch } from 'react-redux';
 
 import useLanguage from '@/locale/useLanguage';
 
@@ -12,7 +11,7 @@ export default function GeneralSettingForm() {
     <div>
       <Form.Item
         label={translate('Date Format')}
-        name="idurar_app_date_format"
+        name="easy_app_date_format"
         rules={[
           {
             required: true,
@@ -74,7 +73,7 @@ export default function GeneralSettingForm() {
       </Form.Item>
       <Form.Item
         label={translate('email')}
-        name="idurar_app_company_email"
+        name="easy_app_company_email"
         rules={[
           {
             required: true,

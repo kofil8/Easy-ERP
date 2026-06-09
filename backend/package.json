@@ -1,5 +1,5 @@
 {
-  "name": "idurar-erp-crm",
+  "name": "easy-erp",
   "version": "4.1.0",
   "scripts": {
     "start": "node src/server.js",

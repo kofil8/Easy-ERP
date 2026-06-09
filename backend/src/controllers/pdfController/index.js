@@ -48,7 +48,7 @@ exports.generatePdf = async (
     }
 
     const settings = await loadSettings();
-    const selectedLang = settings['idurar_app_language'];
+    const selectedLang = settings['easy_app_language'];
     const translate = useLanguage({ selectedLang });
 
     const {

@@ -1,4 +1,4 @@
-import { Avatar, Popover, Button, Badge, Col, List } from 'antd';
+import { Badge, Button } from 'antd';
 
 // import Notifications from '@/components/Notification';
 
@@ -22,7 +22,7 @@ export default function UpgradeButton() {
         }}
         icon={<RocketOutlined />}
         onClick={() => {
-          window.open(`https://entreprise.idurarapp.com`);
+          window.open(`https://entreprise.easyapp.com`);
         }}
       >
         {translate('Try Entreprise Version')}

@@ -1,19 +1,19 @@
 import './style/app.css';
 
-import { Suspense, lazy } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from '@/redux/store';
 import PageLoader from '@/components/PageLoader';
+import store from '@/redux/store';
+import { Suspense, lazy } from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-const IdurarOs = lazy(() => import('./apps/IdurarOs'));
+const EasyOs = lazy(() => import('./apps/EasyOs'));
 
 export default function RoutApp() {
   return (
     <BrowserRouter>
       <Provider store={store}>
         <Suspense fallback={<PageLoader />}>
-          <IdurarOs />
+          <EasyOs />
         </Suspense>
       </Provider>
     </BrowserRouter>

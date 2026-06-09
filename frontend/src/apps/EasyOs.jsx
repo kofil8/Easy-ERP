@@ -1,11 +1,11 @@
 import { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 
-import { selectAuth } from '@/redux/auth/selectors';
-import { AppContextProvider } from '@/context/appContext';
 import PageLoader from '@/components/PageLoader';
-import AuthRouter from '@/router/AuthRouter';
+import { AppContextProvider } from '@/context/appContext';
 import Localization from '@/locale/Localization';
+import { selectAuth } from '@/redux/auth/selectors';
+import AuthRouter from '@/router/AuthRouter';
 
 const ErpApp = lazy(() => import('./ErpApp'));
 
@@ -19,7 +19,7 @@ const DefaultApp = () => (
   </Localization>
 );
 
-export default function IdurarOs() {
+export default function EasyOs() {
   const { isLoggedIn } = useSelector(selectAuth);
 
   if (!isLoggedIn)

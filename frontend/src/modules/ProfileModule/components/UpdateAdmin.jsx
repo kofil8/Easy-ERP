@@ -1,0 +1,89 @@
+import { useProfileContext } from '@/context/profileContext';
+import { CloseCircleOutlined, SaveOutlined } from '@ant-design/icons';
+import { Button, Col, Form, Row } from 'antd';
+import { PageHeader } from '@ant-design/pro-layout';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import ProfileAdminForm from './ProfileAdminForm';
+
+import { updateProfile } from '@/redux/auth/actions';
+
+import { selectCurrentAdmin } from '@/redux/auth/selectors';
+
+import useLanguage from '@/locale/useLanguage';
+
+const UpdateAdmin = ({ config }) => {
+  const translate = useLanguage();
+
+  const { profileContextAction } = useProfileContext();
+  const { updatePanel } = profileContextAction;
+  const dispatch = useDispatch();
+  const { ENTITY_NAME } = config;
+  const [isSaving, setIsSaving] = useState(false);
+
+  const currentAdmin = useSelector(selectCurrentAdmin);
+  const [form] = Form.useForm();
+
+  useEffect(() => {
+    form.setFieldsValue(currentAdmin);
+  }, [currentAdmin, form]);
+
+  const handleSubmit = () => {
+    form.submit();
+  };
+
+  const onSubmit = async (fieldsValue) => {
+    if (fieldsValue.file) {
+      fieldsValue.file = fieldsValue.file[0].originFileObj;
+    }
+
+    setIsSaving(true);
+    const result = await dispatch(updateProfile({ entity: 'admin/profile', jsonData: fieldsValue }));
+    setIsSaving(false);
+
+    if (result?.success) {
+      updatePanel.close();
+    }
+  };
+
+  return (
+    <div>
+      <PageHeader
+        onBack={() => updatePanel.close()}
+        title={ENTITY_NAME}
+        ghost={false}
+        extra={[
+          <Button
+            onClick={() => updatePanel.close()}
+            key="close"
+            icon={<CloseCircleOutlined />}
+            disabled={isSaving}
+          >
+            {translate('Close')}
+          </Button>,
+          <Button
+            key="save"
+            onClick={handleSubmit}
+            type="primary"
+            icon={<SaveOutlined />}
+            loading={isSaving}
+          >
+            {translate('Save')}
+          </Button>,
+        ]}
+        style={{
+          padding: '20px 0px',
+        }}
+      ></PageHeader>
+      <Row align="start">
+        <Col xs={{ span: 24 }} md={{ span: 16 }}>
+          <Form form={form} onFinish={onSubmit} layout="vertical">
+            <ProfileAdminForm isUpdateForm={true} />
+          </Form>
+        </Col>
+      </Row>
+    </div>
+  );
+};
+
+export default UpdateAdmin;

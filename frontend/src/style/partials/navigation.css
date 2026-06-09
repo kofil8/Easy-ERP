@@ -1,0 +1,111 @@
+.navigation {
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #061a2c !important;
+  border-right: 0;
+  box-shadow: 12px 0 30px rgba(15, 23, 42, 0.1);
+}
+
+.logo {
+  height: 64px;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.logoText {
+  color: #fff;
+  white-space: nowrap;
+}
+
+.navigation .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation .ant-menu {
+  flex: 1;
+  padding-top: 12px;
+  background: transparent !important;
+}
+
+.navigation .ant-menu-item {
+  color: #c9d5e3 !important;
+  font-weight: 650;
+}
+
+.navigation .ant-menu-item-selected {
+  background: #1d8f8a !important;
+  color: #fff !important;
+}
+
+.navigation .ant-menu-item:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.sidebar-wraper {
+  background: #fff;
+  display: block;
+}
+
+.mobile-sidebar-wraper {
+  display: none;
+}
+
+.mobile-sidebar-wraper .ant-drawer-body {
+  padding: 12px 0px !important;
+}
+
+/* .ant-btn.mobile-sidebar-btn {
+  display: none;
+} */
+
+.tabsNavigation span {
+  background-color: transparent;
+}
+
+.tabsNavigation:hover span {
+  box-shadow: 0px 0px 30px 8px rgba(0, 115, 255, 0.15);
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-wraper {
+    display: none;
+  }
+
+  .navigation {
+    height: 100%;
+    position: relative;
+  }
+
+  /* .ant-btn.mobile-sidebar-btn {
+    display: block;
+    position: absolute;
+    top: 21px;
+  } */
+
+  .mobile-sidebar-wraper {
+    display: block;
+  }
+}

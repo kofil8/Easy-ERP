@@ -1,0 +1,19 @@
+
+> idurar-erp-crm@4.1.0 dev
+> vite --host 127.0.0.1
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m4226[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m3000[22m/[39m
+[2m10:05:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/UpgradeButton.jsx[22m
+[2m10:05:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/UpgradeButton.jsx[22m
+[2m10:06:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/IdurarOs.jsx[22m
+[2m10:08:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/HeaderContainer.jsx[22m
+[2m10:08:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/UpgradeButton.jsx[22m
+[2m10:09:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/UpgradeButton.jsx[22m
+[2m10:16:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx[22m
+[2m10:19:29 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m10:19:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/About.jsx[22m
+[2m10:19:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Navigation/NavigationContainer.jsx[22m
+[2m10:19:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/apps/Header/HeaderContainer.jsx[22m

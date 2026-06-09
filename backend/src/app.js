@@ -31,7 +31,7 @@ app.use(morgan(morganFormat, { stream: morganStream }));
 
 app.use(
   cors({
-    origin: true,
+    origin: process.env.FRONTEND_URL || true,
     credentials: true,
   })
 );

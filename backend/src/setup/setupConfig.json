@@ -8,7 +8,7 @@
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_unique_id",
-    "setupValue": "",
+    "setupValue": "easy-erp-demo",
     "valueType": "string"
   },
   {
@@ -20,7 +20,7 @@
   {
     "setupCategory": "setup_config",
     "setupKey": "DATABASE",
-    "setupValue": "",
+    "setupValue": "mongodb://127.0.0.1:27017/easy-erp",
     "valueType": "string"
   },
   {
@@ -32,37 +32,37 @@
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_domain",
-    "setupValue": "",
+    "setupValue": "http://localhost:3000",
     "valueType": "string"
   },
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_email",
-    "setupValue": "",
+    "setupValue": "admin@admin.com",
     "valueType": "string"
   },
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_country",
-    "setupValue": "",
+    "setupValue": "United States",
     "valueType": "string"
   },
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_timezone",
-    "setupValue": "",
+    "setupValue": "UTC",
     "valueType": "string"
   },
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_licence_email",
-    "setupValue": "",
+    "setupValue": "admin@admin.com",
     "valueType": "string"
   },
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_licence_key",
-    "setupValue": "",
+    "setupValue": "FREE-TRIAL-DEMO",
     "valueType": "string"
   },
   {
@@ -74,7 +74,7 @@
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_app_licence_expired_date",
-    "setupValue": "",
+    "setupValue": "2026-12-31",
     "valueType": "date"
   },
   {
@@ -110,7 +110,7 @@
   {
     "setupCategory": "setup_config",
     "setupKey": "easy_load_demo_data",
-    "setupValue": false,
+    "setupValue": true,
     "valueType": "boolean"
   }
 ]

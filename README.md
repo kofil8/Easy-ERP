@@ -2,6 +2,8 @@
 
 A Full-Stack ERP and CRM Application built with React.js, Node.js, and MongoDB.
 
+![Easy ERP Dashboard](./Easy%20ERP.png)
+
 ## Overview
 
 Easy ERP is a comprehensive business management application that provides tools for managing customers, invoices, quotes, payments, and other essential business operations. It's designed as a modular, scalable solution with a modern tech stack.
